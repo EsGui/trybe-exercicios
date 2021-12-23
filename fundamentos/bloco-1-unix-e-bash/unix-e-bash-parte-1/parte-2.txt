@@ -50,3 +50,7 @@ Parte II - Manipulação & Busca
 
 	ls *.txt
 
+13 - Liste todos os arquivos que terminem com tbt ou txt .
+
+	ls *.tbt *.txt
+
