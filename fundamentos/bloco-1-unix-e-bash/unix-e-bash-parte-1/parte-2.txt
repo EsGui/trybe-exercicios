@@ -20,3 +20,9 @@ Parte II - Manipulação & Busca
 5 - Busque por Brazil no countries.txt .
 
 	grep Brazil countries.txt
+
+6 - Busque novamente por brazil, mas agora utilizando o lower case.
+
+	grep -i brazil countries.txt
+
+
