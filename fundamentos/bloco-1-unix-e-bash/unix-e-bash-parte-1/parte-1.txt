@@ -40,3 +40,7 @@
 
 	mv backup2 backup
 
+11 - Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele.
+
+	pwd
+	ls *
