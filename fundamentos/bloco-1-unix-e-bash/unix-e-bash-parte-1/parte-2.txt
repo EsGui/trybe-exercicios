@@ -8,4 +8,8 @@ Parte II - Manipulação & Busca
 	
 	cat countries.txt
 
+3 - Mostre o conteúdo de countries.txt , página por página, até encontrar a Zambia .
+
+	less countries.txt
+
 
