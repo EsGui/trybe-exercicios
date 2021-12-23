@@ -16,3 +16,7 @@ Parte II - Manipulação & Busca
 
 	less countries.txt
 	/Zambia
+
+5 - Busque por Brazil no countries.txt .
+
+	grep Brazil countries.txt
