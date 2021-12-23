@@ -31,3 +31,8 @@ Parte II - Manipulação & Busca
 	
 	grep -iv 'fox' phrases.txt
 
+8 Conte o número de palavras do arquivo phrases.txt .
+
+	wc -w phrases.txt
+
+
