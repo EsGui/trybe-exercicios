@@ -54,3 +54,6 @@ Parte II - Manipulação & Busca
 
 	ls *.tbt *.txt
 
+14 - Acesse o manual do comando ls .
+
+	man ls
