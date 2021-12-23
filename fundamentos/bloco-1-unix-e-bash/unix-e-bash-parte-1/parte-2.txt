@@ -12,4 +12,7 @@ Parte II - Manipulação & Busca
 
 	less countries.txt
 
+4 - Mostre novamente o conteúdo de countries.txt página por página, mas agora utilize um comando para buscar por Zambia .
 
+	less countries.txt
+	/Zambia
