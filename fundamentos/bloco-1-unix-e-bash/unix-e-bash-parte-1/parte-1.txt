@@ -11,3 +11,6 @@
 
 	cp trybe.txt trybe_backckp.txt
 
+4 - Renomeie o arquivo trybe.txt .
+	
+	mv trybe.txt trybe2.txt
