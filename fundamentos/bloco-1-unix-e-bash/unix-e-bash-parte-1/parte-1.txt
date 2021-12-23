@@ -48,3 +48,7 @@
 12 - Apague o diretório backup .
 	
 	rm -rf backup
+
+13 - Limpe o terminal.
+	
+	clear
