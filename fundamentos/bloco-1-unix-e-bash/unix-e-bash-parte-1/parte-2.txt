@@ -26,5 +26,8 @@ Parte II - Manipulação & Busca
 	grep -i brazil countries.txt
 	Para os próximos exercícios, crie um novo arquivo chamado phrases.txt e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.
 	
+7 - Busque pelas frases que não contenham a palavra fox .
 
+	
+	grep -iv 'fox' phrases.txt
 
