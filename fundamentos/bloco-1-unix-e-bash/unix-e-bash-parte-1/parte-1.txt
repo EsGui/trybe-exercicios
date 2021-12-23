@@ -23,3 +23,6 @@
 	
 	mv trybe_backup.txt backup
 
+7 - Dentro de unix_tests , crie um novo diretório chamado backup2 .
+	
+	mkdir backup2
