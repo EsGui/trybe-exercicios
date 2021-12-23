@@ -32,3 +32,6 @@
 	mv trybe_backup.txt /home/lucaslima/trybe-exercices/bloco-01-fundamentos/bloco-01-unix-e-bash/unix-e-bash-parte-1/unix_tests/backup2	
 
 
+9 - Apague a pasta backup .
+	
+	rm -rf backup
