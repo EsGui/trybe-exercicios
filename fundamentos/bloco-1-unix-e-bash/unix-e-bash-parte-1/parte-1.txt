@@ -35,3 +35,8 @@
 9 - Apague a pasta backup .
 	
 	rm -rf backup
+
+10 - Renomeie a pasta backup2 para backup .
+
+	mv backup2 backup
+
