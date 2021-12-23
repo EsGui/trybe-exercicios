@@ -24,5 +24,7 @@ Parte II - Manipulação & Busca
 6 - Busque novamente por brazil, mas agora utilizando o lower case.
 
 	grep -i brazil countries.txt
+	Para os próximos exercícios, crie um novo arquivo chamado phrases.txt e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.
+	
 
 
