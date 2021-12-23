@@ -2,3 +2,7 @@
 
 	mkdir unix_tests
 	cd unix_tests
+
+2 - Crie um arquivo de texto com o nome trybe.txt .
+	
+	touch trybe.txt
