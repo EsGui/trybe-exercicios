@@ -28,11 +28,18 @@ Parte II - Manipulação & Busca
 	
 7 - Busque pelas frases que não contenham a palavra fox .
 
-	
 	grep -iv 'fox' phrases.txt
 
-8 Conte o número de palavras do arquivo phrases.txt .
+8 - Conte o número de palavras do arquivo phrases.txt .
 
 	wc -w phrases.txt
+
+9 - Conte o número de linhas do arquivo phrases.txt.
+ 
+	wc -l phrases.txt
+
+10 - Crie os arquivos empty.tbt e empty.pdf
+
+	cat > empty.tbt empty.pdf
 
 
