@@ -14,3 +14,7 @@
 4 - Renomeie o arquivo trybe.txt .
 	
 	mv trybe.txt trybe2.txt
+
+5 - Dentro de unix_tests, crie um novo diretório chamado backup .
+	
+	mkdir backup
