@@ -18,3 +18,8 @@
 	chmod a-w bunch_of_things.txt
 	ls -l
 
+
+5 - Volte a permissão do arquivo bunch_of_things.txt para a listada inicialmente utilizando o comando chmod 644 bunch_of_things.txt
+
+	chmod 644 bunch_of_things.txt
+	ls -l
