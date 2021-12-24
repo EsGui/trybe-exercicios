@@ -20,4 +20,18 @@
 	ls 
 	ls -f
 
+5 - Crie um arquivo chamado top_skills.txt usando o skills2.txt , contendo as 3 primeiras skills em ordem alfabética.
+
+	sort < skills2.txt | head -n 3 > top_skills
+
+6 - Crie um novo arquivo chamado phrases2.txt e adicione algumas frases de sua escolha.
+
+	touch phrases2.txt
+	echo "The quick brown fox jumps over the lazy dog." > phrases2.txt
+	echo "Quick fox jumps nightly above wizard." >> phrases2.txt
+	echo "The quick onyx goblin jumps over the lazy dwarf." >> phrases2.txt
+
+7 - Conte o número de linhas que contêm a letra br
+
+	grep br phrases2.txt | wc -l
 
