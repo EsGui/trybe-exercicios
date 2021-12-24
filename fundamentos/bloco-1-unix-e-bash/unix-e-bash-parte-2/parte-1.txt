@@ -51,3 +51,10 @@
 8 - Conte o número de linhas que não contêm as letras br
 
 	grep -v br phrases2.txt | wc -l
+
+9 - Adicione dois nomes de países ao final do arquivo phrases2.txt
+
+	echo "Japão" >> phrases2.txt
+	echo "Austrália" >> phrases2.txt
+
+
