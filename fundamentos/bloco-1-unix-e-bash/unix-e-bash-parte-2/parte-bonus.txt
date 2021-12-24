@@ -32,3 +32,8 @@
 	factor 42
 
 
+7 - Veja como fica a sua sorte do dia ao contrário. Dica: utilize o comando rev 
+
+	tail fortune.txt | rev
+
+
