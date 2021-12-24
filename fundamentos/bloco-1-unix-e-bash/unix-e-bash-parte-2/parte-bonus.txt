@@ -36,4 +36,6 @@
 
 	tail fortune.txt | rev
 
+8 - Execute o comando telnet towel.blinkenlights.nl . Lembre-se de que você tem mais exercícios para fazer!
 
+	telnet towel.blinkenlights.nl
