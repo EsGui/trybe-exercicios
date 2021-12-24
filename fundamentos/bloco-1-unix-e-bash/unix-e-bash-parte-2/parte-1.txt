@@ -31,3 +31,9 @@
 
 	wc -l skills2.txt
 	8 skills2.txt
+
+5 - Crie um arquivo chamado top_skills.txt usando o skills2.txt , contendo as 3 primeiras skills em ordem alfabética.
+
+	wc -l
+
+
