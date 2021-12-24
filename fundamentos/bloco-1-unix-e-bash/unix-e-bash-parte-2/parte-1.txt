@@ -36,6 +36,9 @@
 
 	sort < skills2.txt | head -n 3 > top_skills.txt
 
+6 - Cria um novo arquivo chamado phrases2.txt pelo terminal e adiciona algumas frases de sua escolha.
 
+	cat >> phrases2.txt
+	O momento pode até sumir da memória, mas há um Deus no céu que não despreza tua história!
 
 
