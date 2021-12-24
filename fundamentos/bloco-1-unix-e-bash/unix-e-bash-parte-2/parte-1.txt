@@ -13,3 +13,14 @@
 	Bash
 
 
+3 - Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal.
+
+	cart >> skills2.txt
+	HTML
+	CSS
+	JAVASCRIPT
+	GITHUB
+	PYTHON
+	sort skills.txt
+
+
