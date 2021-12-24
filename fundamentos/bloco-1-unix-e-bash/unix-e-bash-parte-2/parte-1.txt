@@ -58,3 +58,9 @@
 	echo "Austrália" >> phrases2.txt
 
 
+10 - Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt
+
+	cp countries.txt bunch_of_things.txt
+	cat phrases.2.txt >> bunch_of_things.txt
+
+
