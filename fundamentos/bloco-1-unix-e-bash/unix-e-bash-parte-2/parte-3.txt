@@ -13,4 +13,9 @@
 	ps | grep sleep
 	kill 1234 # se 1234 for o PID do processo criado no Exercício 2
 
+4 - Execute novamente o comando sleep 30 , mas agora sem o & . Depois, faça com que ele continue executando em background
+
+	sleep 30
+	bg
+
 
