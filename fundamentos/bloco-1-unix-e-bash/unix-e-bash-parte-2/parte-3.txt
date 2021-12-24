@@ -30,4 +30,22 @@
 	sleep 100
 	ctrl + z
 
+7 - Verifique que apenas o processo sleep 300 está em execução com o comando jobs . Suspenda a execução desse processo (você vai precisar trazer o processo para foreground e suspendê-lo, ou enviar um sinal)
 
+	jobs
+	fg %1
+	ctrl + z
+	jobs
+
+8 - Retome a execução do processo sleep 100 em background
+
+	bg %3 # executando o processo sleep 100 em background com o comando bg
+	jobs
+	
+9 - Termine a execução de todos os processos sleep (mate os processos)
+	
+	ps | grep sleep
+	kill 1234 # assumindo que 1234 seja o PID de um dos processos sleep
+	kill 4567 # assumindo que 4567 seja o PID de um dos processos sleep
+	kill 7890 # assumindo que 7890 seja o PID de um dos processos sleep
+	killall sleep
