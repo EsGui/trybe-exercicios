@@ -10,3 +10,25 @@
 	sudo apt-get install fortune
 	fortune > fortune.txt
 
+3 - Conte quantas palavras tem a frase da sua sorte do dia. Dica: use o comando wc
+
+	
+	wc -w fortune.txt
+
+4 - Execute o comando sudo apt-get install sl em um terminal Linux , ou brew install sl em um terminal macOS . Após a instalação, execute o comando sl . Agora tente sl -F ;
+
+	sudo apt-get install sl
+	sl
+	sl -f
+
+5 - No sistema Linux , execute o comando sudo apt-get install cowsay , ou brew install cowsay no macOS . Após a instalação, execute o comando cowsay e algo que você queira falar. Agora faça a vaquinha dizer a frase que está gravada no arquivo fortune.txt
+
+	sudo apt-get install cowsay
+	cowsay show
+	tail fortune.txt | cowsay
+
+6 - Descubra os fatores primos usando o comando factor e em seguida o número 42 
+	
+	factor 42
+
+
