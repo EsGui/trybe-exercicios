@@ -8,3 +8,9 @@
 
 	ls -l
 
+3 - Mude a permissão do arquivo bunch_of_things.txt para que todos os usuários possam ter acesso à leitura e escrita e verifique se está correto com o comando ls -l
+
+	chmod a+r2 bunch_of_things.txt
+	ls -l
+
+
