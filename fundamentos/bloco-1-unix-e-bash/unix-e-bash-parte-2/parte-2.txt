@@ -1,0 +1,6 @@
+1 - Navegue até a pasta unix_tests 
+
+	cd ..
+	cd unix-e-bash-parte-1
+	cd unix_tests
+
