@@ -19,3 +19,6 @@
 	bg
 
 
+5 - Crie um processo em background que rode o comando sleep por 300 segundos
+
+	sleep 300 &
