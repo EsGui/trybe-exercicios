@@ -2,4 +2,9 @@
 
 	ps 
 
+2 - Agora execute o comando [sleep](https://linux.die.net/man/3/sleep) {: .external-link target="_blank" rel="noreferrer noopener" } 30 [&](https://linuxhandbook.com/run-process-background/) {: .external-link target="_blank" rel="noreferrer noopener" }
+
+	ps | grep sleep
+	kill 1234 # se 1234 for o PID do processo criado no Exercício 2
+
 
