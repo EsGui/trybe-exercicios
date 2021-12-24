@@ -1,0 +1,5 @@
+1 - Liste todos os processos
+
+	ps 
+
+
