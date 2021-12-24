@@ -13,4 +13,8 @@
 	chmod a+r2 bunch_of_things.txt
 	ls -l
 
+4 - Tire a permissão de escrita do arquivo bunch_of_things.txt para todos os usuários, verifique se está correto com o comando ls -l 
+
+	chmod a-w bunch_of_things.txt
+	ls -l
 
