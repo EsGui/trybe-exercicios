@@ -1,4 +1,4 @@
-#  - Exercícios - HMTML & CSS - Primeiros passos em CSS
+#  - Exercícios - HMTL & CSS - Primeiros passos em CSS
 
 ## Parte I - Introdução ao CSS:
 
