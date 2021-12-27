@@ -35,4 +35,5 @@ if (currentHour >= 22) {
     message = "Hmm, cheiro de café recém passado";
 }
 
+
 console.log(message);
