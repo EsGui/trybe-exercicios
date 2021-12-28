@@ -7,7 +7,7 @@
 Refêrencia: Trybe
 
 */
-
+ 
 let word = 'tryber';
 let reverseWord = '';
 
