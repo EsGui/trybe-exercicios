@@ -18,3 +18,4 @@ for (let index = 0; index < 5; index += 1) {
     reserve += asteriscos
     console.log(reserve);
 }
+
