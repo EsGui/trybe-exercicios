@@ -14,14 +14,19 @@ let info = {
     origem: 'Pato Donald',
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
     recorrente: 'Sim',
-    info2: {
-        personagem: 'Margarida e Tio Patinhas', 
-        origem: 'Pato Donald e Christmas on Bear Mountain, Dell"s Four Color Comics #178',
-        nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas',
-        recorrente: 'Ambos recorrentes',
-    }
 };
 
-for (let itens in info.info2) {
-    console.log(info.info2[itens]);
+let info2 = {
+    personagem: 'Tio Patinhas', 
+    origem: 'Christmas on Bear Mountain, Dell"s Four Color Comics #178',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas',
+    recorrente: 'Sim',
+}
+
+for (let item in info) {
+    if (item === 'recorrente' && info[item] === "Sim" && info2[item] === 'Sim') {
+        console.log('Ambos recorrentes')
+    } else {
+        console.log(info[item] + ' e ' + info2[item])
+    }
 }
