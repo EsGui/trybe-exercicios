@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de currículo</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulário</h1>
+        </header>
+            <form action="" method="get">
+                <!-- 
+
+                    1 - Crie um <fieldset> para os seguintes dados pessoais:
+
+                -->
+                <fieldset>
+                    <!-- 
+
+                        Nome - Texto
+                            Limite de 40 caracteres
+                            Campo obrigatório
+
+                    -->
+
+                    <label for="input-text">Digite seu nome:</label>
+                    <input type="text" name="texto" placeholder="Nome" maxlength="40" id="input-text" required>
+
+                    <!-- 
+
+                        Email - Texto
+                            Limite de 50 caracteres
+                            Campo obrigatório
+
+                    -->
+
+                    <label for="input-email">Digite seu e-mail</label>
+                    <input type="text" name="email" placeholder="E-mail" maxlength="50" id="input-email" required>
+
+                    <!-- 
+
+                        CPF - Texto
+                            Limite de 11 caracteres
+                            Campo obrigatório
+
+                    -->
+
+                    <label for="input-cpf">Digite seu CPF:</label>
+                    <input type="text" name="cpf" placeholder="CPF" maxlength="11" id="input-cpf" required>
+
+                    <!-- 
+
+                        Endereço - Texto
+                            Limite de 200 caracteres
+                            Campo obrigatório
+
+                    -->
+
+                    <label for="input-endereco">Digite seu Endereço:</label>
+                    <input type="text" name="endereco" placeholder="Endereço" maxlength="200" id="input-endereco" required>
+
+                    <!-- 
+
+                        Cidade - Texto
+                            Limite de 28 caracteres
+                            Campo obrigatório
+
+                    -->
+
+                    <label for="input-cidade">Digite o nome de sua cidade</label>
+                    <input type="text" name="cidade" placeholder="Cidade" max="28" id="input-cidade" required>
+
+                    <!-- 
+
+                        Estado - Select
+                            Todos os estados do Brasil
+                            Utilize estruturas de repetição via JavaScript para gerar os <option>
+                            Campo obrigatório
+
+                        -->
+
+                        <label for="dropdown-estado">Escolha seu estado:</label>
+                        <select name="estado" id="dropdown-estado" required></select>
+
+                        <!-- 
+
+                            2 - Crie outro <fieldset> para dados do seu último emprego
+
+                        -->
+                </fieldset>
+                <fieldset>
+                    <!-- 
+
+                        Resumo do currículo - TextArea
+                            Limite de 1000 caracteres
+                            Campo obrigatório
+
+                        -->
+
+                        <label for="resumo-curriculo">Coloque um resumo de seu currículo:</label>
+                        <textarea name="resumo-de-curriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+
+                        <!-- 
+
+                        Cargo - Texto
+                            Limite de 40 caracteres
+                            Campo obrigatório
+
+                        -->
+
+                        <label for="seu-cargo">Qual seu cargo?</label>
+                        <input type="text" nome="cargo" maxlength="40" id="seu-cargo" required>
+
+                        <!-- 
+
+                            Descrição do cargo - Texto
+                                Limite de 500 caracteres
+                                Campo obrigatório
+
+                        -->
+
+                        <label for="">Descreva o seu cargo</label>
+                        <textarea name="area-cargo" id="descricao-do-cargo" maxlength="500" cols="30" rows="10"></textarea>
+
+                        <!-- 
+
+                            Data de início - Texto
+                                Verificar o formato da data dd/mm/aaaa .
+                                O dia deve ser > 0 e <= 31.
+                                O mês deve ser > 0 e <= 12.
+                                O ano não pode ser negativo.
+                                Caso alguma das condições seja inválida no momento do envio do formulário, exibir via alert uma mensagem de erro contextualizada.
+                                Campo obrigatório
+
+                        -->
+
+                        <label for="">Digite a data</label>
+                        <input type="text" name="date" id="data" maxlength="10" placeholder="dd/mm/aaaa" required>
+
+                        <button type="submit" id="envia-tudo">Enviar</button>
+
+                </fieldset>
+            </form>
+            <button id="apaga-tudo">Limpar dados</button>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>FORMULÁRIO</h1>
+        <form action="" method="get">
+            <label for="input-text">Digite seu nome:</label>
+            <input type="text" placeholder="digite alguma coisa" required name="texto" class="" value="Guilherme" id="input-text">
+            <br>
+            <br>
+            <textarea name="" id="" cols="30" rows="5">texto já estabelecido</textarea>
+            <button type="submit">Enviar</button>
+            <br>
+            <input type="checkbox" id="esporte-1" value="fut" name="" checked>Futebol
+            <input type="checkbox" id="esporte-2" value="vol" name="">Vôlei
+            <input type="checkbox" id="esporte-3" value="pet" name="">Peteca
+            <input type="checkbox" id="esporte-4" value="bas" name="">Basquete
+            <br>
+            <br>
+            <label for="hub1"><input type="radio" id="hub1" name="hub" value="sp">São Paulo</label>
+            <label for="hub2"><input type="radio" id="hub2" name="hub" value="bh">Belo Horizonte</label>
+            <label for="hub3"><input type="radio" id="hub3" name="hub" value="fl">Florianópolis</label>
+            <label for="hub4"><input type="radio" id="hub4" name="hub" value="mc">Macedônia</label>
+            <br>
+            <br>
+            <select name="estado" id="dropdown-estado">
+                <option value="sp">São Paulo</option>
+                <option value="ba">Bahia</option>
+                <option value="sp">Minas Gerais</option>
+                <option value="sp">Amazonas</option>
+            </select>
+            <br>
+            <br>
+            <input type="password" name="senha">
+            <br>
+            <br>
+            <!-- Caso use o input type="File", se você usar o metodo POST na tag forms você precisar usar também precisara usar o metodo enctype="multipart/form-data" -->
+            <input type="file" name="" id="">
+            <br>
+            <br>
+            <p>Usuário</p>
+            <input type="text" name="user" required>
+            <p>Senha</p>
+            <input type="password" name="senha" required>
+            <button type="submit" class="" name="" id="">Enviar</button>
+        </form>
+    </body>
+</html>
