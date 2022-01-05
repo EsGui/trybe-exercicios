@@ -51,7 +51,7 @@ Data de início - Texto
 
 */
 
-let botaoTudo = document.querySelector("#envia-tudo");
+let botaoTudo = document.querySelector("#envia-tudo")
 
 botaoTudo.addEventListener("click", function () {
     let inputs = document.querySelectorAll("input");
@@ -59,7 +59,9 @@ botaoTudo.addEventListener("click", function () {
     let form = document.querySelector("form");
     let dia = parseInt(data.value[0] + data.value[1]);
     let mes = parseInt(data.value[3] + data.value[4]);
-    let ano = parseInt(data.value[6] + data.value[7] + data.value[8] + data.value[9])
+    let ano = parseInt(data.value[6] + data.value[7] + data.value[8] + data.value[9]);
+
+
     for (let index = 0; index < inputs.length; index += 1) {
         if (inputs[index].value != "") {
             let div = document.createElement("div");
@@ -113,6 +115,7 @@ botaoTudo.addEventListener("click", function () {
 let apagaTudo = document.querySelector("#apaga-tudo");
 
 apagaTudo.addEventListener("click", function () {
+    let div = document.querySelectorAll("div");
     let inputs = document.querySelectorAll("input");
     let textareas = document.querySelectorAll("textarea");
     for (let index = 0; index < inputs.length; index += 1) {
@@ -120,6 +123,9 @@ apagaTudo.addEventListener("click", function () {
     }
     for (let index = 0; index < textareas.length; index += 1) {
         textareas[index].value = "";
+    }
+    for (let index = 0; index < div.length; index += 1) {
+        div[index].value = "";
     }
 })
 
