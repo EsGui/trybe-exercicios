@@ -1,0 +1,159 @@
+<!-- 
+    Referencias: 
+
+    Biblioteca: Just-Validate, bootstrap
+    Referência: Just-Validate: https://github.com/horprogs/Just-validate / bootstrap: https://getbootstrap.com/
+
+ -->
+
+<!-- 
+
+    1 - Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
+
+    Sugestões: Bulma , Bootstrap , Semantic UI e Materialize .
+
+    2 - Adicione uma biblioteca JavaScript de date picker ao formulário que você construiu na última aula. Utilize essa biblioteca no campo "Data de início" do formulário. Você pode remover as validações de data que adicionou, uma vez que a biblioteca se encarregará de permitir somente datas válidas.
+
+    Sugestões: DatePickerX e Pikaday .
+
+    3 - Adicione uma biblioteca JavaScript de validações ao formulário que você construiu na última aula. Utilize essa biblioteca para substituir as validações que você fez manualmente.
+   
+    Sugestões: Just-validate e popup-validation
+    
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de currículo</title>
+        <link rel="stylesheet" href="DatePickerX/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
+        <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+        <script src="DatePickerX/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body class="btn-dark">
+        <header class="form-check">
+            <h1>Formulário</h1>
+        </header>
+            <form id="formulario" action="" method="get">
+                <!-- 
+                    1 - Crie um <fieldset> para os seguintes dados pessoais:
+                -->
+                <fieldset>
+                    <!-- 
+                        Nome - Texto
+                            Limite de 40 caracteres
+                            Campo obrigatório
+                    -->
+                    <div class="form-control form-check btn-dark">
+                        <label for="input-text">Digite seu nome:</label>
+                        <input type="text" name="texto" placeholder="Nome" id="input-text">
+                    </div>
+                    <!-- 
+                        Email - Texto
+                            Limite de 50 caracteres
+                            Campo obrigatório
+                    -->
+                    <div class="form-control form-check btn-dark">
+                        <label for="input-email">Digite seu e-mail</label>
+                        <input type="text" name="email" placeholder="E-mail" id="input-email" >
+                    </div>
+                    <!-- 
+                        CPF - Texto
+                            Limite de 11 caracteres
+                            Campo obrigatório
+                    -->
+                    <div class="form-control form-check btn-dark">
+                        <label for="input-cpf">Digite seu CPF:</label>
+                        <input type="text" name="cpf" placeholder="CPF" id="input-cpf">
+                    </div>
+                    <!-- 
+                        Endereço - Texto
+                            Limite de 200 caracteres
+                            Campo obrigatório
+                    -->
+                    <div class="form-control form-check btn-dark">
+                        <label for="input-endereco">Digite seu Endereço:</label>
+                        <input type="text" name="endereco" placeholder="Endereço" id="input-endereco">
+                    </div>
+                    <!-- 
+                        Cidade - Texto
+                            Limite de 28 caracteres
+                            Campo obrigatório
+                    -->
+                    <div class="form-control form-check btn-dark">
+                        <label for="input-cidade">Digite o nome de sua cidade</label>
+                        <input type="text" name="cidade" placeholder="Cidade" id="input-cidade">
+                    </div>
+                    <!-- 
+                        Estado - Select
+                            Todos os estados do Brasil
+                            Utilize estruturas de repetição via JavaScript para gerar os <option>
+                            Campo obrigatório
+                        -->
+                        <div class="form-control form-check btn-dark">
+                            <label for="dropdown-estado">Escolha seu estado:</label>
+                            <select name="estado" id="dropdown-estado"></select>
+                        </div>
+                        <!-- 
+                            2 - Crie outro <fieldset> para dados do seu último emprego
+                        -->
+                </fieldset>
+                <fieldset>
+                    <!-- 
+                        Resumo do currículo - TextArea
+                            Limite de 1000 caracteres
+                            Campo obrigatório
+                        -->
+                        <div class="form-control form-check btn-dark input-group-text">
+                            <label for="resumo-curriculo">Coloque um resumo de seu currículo:</label>
+                            <textarea name="resumo-de-curriculo" id="resumo-curriculo" cols="30" rows="10"></textarea>
+                        </div>
+                        <!-- 
+                        Cargo - Texto
+                            Limite de 40 caracteres
+                            Campo obrigatório
+                        -->
+                        <div class="form-control form-check btn-dark">
+                            <label for="seu-cargo">Qual seu cargo?</label>
+                            <input type="text" nome="cargo" id="seu-cargo">
+                        </div>
+                        <!-- 
+                            Descrição do cargo - Texto
+                                Limite de 500 caracteres
+                                Campo obrigatório
+                        -->
+                        <div class="form-control form-check btn-dark input-group-text">
+                            <label for="">Descreva o seu cargo:</label>
+                            <textarea name="area-cargo" id="descricao-do-cargo" cols="30" rows="10"></textarea>
+                        </div>
+                        <!-- 
+                            Data de início - Texto
+                                Verificar o formato da data dd/mm/aaaa .
+                                O dia deve ser > 0 e <= 31.
+                                O mês deve ser > 0 e <= 12.
+                                O ano não pode ser negativo.
+                                Caso alguma das condições seja inválida no momento do envio do formulário, exibir via alert uma mensagem de erro contextualizada.
+                                Campo obrigatório
+                        -->
+                        <div class="form-control form-check btn-dark">
+                            <label for="">Digite a data</label>
+                            <input type="text" name="date" id="data" placeholder="dd/mm/aaaa" required>
+                        </div>
+
+                        <div class="form-control form-check btn-dark">
+                            <button class="btn btn-success"type="submit" id="envia-tudo">Enviar</button>
+                        </div>
+                </fieldset>
+            </form>
+            <div class="form-control form-check btn-dark">
+                <button class="btn btn-success" id="apaga-tudo">Limpar dados</button>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
