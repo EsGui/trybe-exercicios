@@ -51,7 +51,7 @@ html {
   }    
 }
 
-/* @media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   body {
     background-color: lightgreen;
   }
@@ -59,4 +59,4 @@ html {
   .container {
     flex-wrap: nowrap;
   }
-} */
+}
