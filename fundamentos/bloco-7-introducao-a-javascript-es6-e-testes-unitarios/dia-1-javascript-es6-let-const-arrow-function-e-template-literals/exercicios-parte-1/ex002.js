@@ -8,21 +8,21 @@ Utilize template literals para que a chamada console.log(<seu código>oddsAndEve
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-const ordena = () => {
-    for (let index1 = 0; index1 < oddsAndEvens.length; index1 += 1) {
-        for (let index2 = 0; index2 < oddsAndEvens.length; index2 += 1) {
-            if (oddsAndEvens[index1] < oddsAndEvens[index2]) {
-                let guardaValor = oddsAndEvens[index2];
-                oddsAndEvens[index2] = oddsAndEvens[index1];
-                oddsAndEvens[index1] = guardaValor;
+const ordena = (array) => {
+    for (let index1 = 0; index1 < array.length; index1 += 1) {
+        for (let index2 = 0; index2 < array.length; index2 += 1) {
+            if (array[index1] < array[index2]) {
+                let guardaValor = array[index2];
+                array[index2] = array[index1];
+                array[index1] = guardaValor;
             }
         }
     }
-    return oddsAndEvens
+    return array
 }
 
-console.log(ordena(`${oddsAndEvens}`)) // será necessário alterar essa linha ;)
-
+const guarda = ordena(oddsAndEvens); // será necessário alterar essa linha ;)
+console.log(`Os números ${guarda} se encontram ordenados de forma crescente!`)
 
 // 
 
