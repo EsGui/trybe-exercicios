@@ -21,23 +21,25 @@ Função 2 : Escreva uma função que vai receber a string retornada da Função
 const skills = ['JavaScript', 'HTML', 'CSS']
 
 const trocaString = (troca) => {
-    habilidades();
     stringDeterminada = 'Tryber x aqui!'.split(" ");
     for (let index = 0; index < stringDeterminada.length; index += 1) {
         if (stringDeterminada[index] === 'x') {
             stringDeterminada[index] = troca
         }
     }
-    
+    return stringDeterminada
 }
 
-
+const frase = trocaString('Bebeto')
 
 const habilidades = () => {
-    trocaString();
+    let pegaSkill = "";
     for (let index = 0; index < skills.length; index += 1) {
-        console.log(`* ${skills[index]}`)
+        pegaSkill = `*${skills[index]}`
+        console.log(pegaSkill)
     }
 }
 
-console.log(trocaString(pegaAString))
+console.log(`${frase} Minhas cinco principais habilidades são: `);
+
+const pegaSkills = habilidades();
