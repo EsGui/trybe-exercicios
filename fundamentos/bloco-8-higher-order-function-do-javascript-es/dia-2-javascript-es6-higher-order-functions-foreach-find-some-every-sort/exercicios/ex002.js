@@ -70,15 +70,20 @@ Dica: use a função forEach.
 */
 
 function smallerName() {
-    let nameBook = 999;
-
+  let nameBook = 999;
     books.forEach((element) => {
         if (element.name.length < nameBook) {
-            nameBook = element.name.length;
+           nameBook = element.name.length;
         }
-    });
-
-    return nameBook; 
+    })
+    let pega = nameBook;
+    let pegaName;
+    books.forEach(element => {
+      if (element.name.length === pega) {
+        pegaName = element.name
+      }
+    })
+    return pegaName;
 }
 
 console.log(smallerName());

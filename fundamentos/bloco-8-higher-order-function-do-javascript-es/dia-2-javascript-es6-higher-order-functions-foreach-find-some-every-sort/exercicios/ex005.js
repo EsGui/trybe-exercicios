@@ -39,23 +39,20 @@ const expectedResult = [
       name: 'O Chamado de Cthulhu',
       genre: 'Terror',
       author: { name: 'H. P. Lovecraft', birthYear: 1890 },
-      releaseYear: 1928,
+      releaseYear: 1828,
     },
   ];
   
-  function booksOrderedByReleaseYearDesc() {
-    // escreva aqui seu código
-  }
-
-
 /* 
 
-4 - Ordene os livros por data de lançamento em ordem decrescente.
+5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
 
 */
 
-function booksOrderedByReleaseYearDesc() {
-    return expectedResult.sort((a, b) => a.releaseYear - b.releaseYear)
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  expectedResult.every((element) => console.log(element.birthYear >= 1901));
 }
 
-console.log(booksOrderedByReleaseYearDesc());
+console.log(everyoneWasBornOnSecXX());
