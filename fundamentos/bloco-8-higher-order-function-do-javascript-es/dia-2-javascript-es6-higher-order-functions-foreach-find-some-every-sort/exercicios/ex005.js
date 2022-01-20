@@ -49,10 +49,10 @@ const expectedResult = [
 
 */
 
-const expectedResult = false;
+/* const expectedResult = false; */
 
 function everyoneWasBornOnSecXX() {
-  expectedResult.every((element) => console.log(element.birthYear >= 1901));
+  return expectedResult.every((element) => element.birthYear >= 1901);
 }
 
 console.log(everyoneWasBornOnSecXX());
