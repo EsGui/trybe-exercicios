@@ -18,3 +18,13 @@ const user = {
     squad: 'Rocket Landing Logic',
     squadInitials: 'RLL',
   };
+
+  const userJobInfos = {
+    ...user,
+    ...jobInfos,
+  }
+
+  const {name, age, nationality, profession, squad, squadInitials} = userJobInfos
+
+  console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a Software engineer and my squad is ${squadInitials}-${squad.split(' ')[0]}`)
+ 
