@@ -1,4 +1,4 @@
-// verifique se a importação do arquivo correto está sendo feita.
+// 9 - verifique se a importação do arquivo correto está sendo feita.
 
 const { getPokemonDetails } = require("./ex008");
 
