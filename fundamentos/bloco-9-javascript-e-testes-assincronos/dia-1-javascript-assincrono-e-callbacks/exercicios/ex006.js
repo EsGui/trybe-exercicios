@@ -29,7 +29,7 @@ const sendMarsTemperature = (sucesso, error) => {
     setTimeout(() => {
         if (chance) sucesso(temperature);
         else error('Robot is busy')
-    });
+    }, messageDelay());
 }
 
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
