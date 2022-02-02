@@ -13,7 +13,7 @@ const getMarsTemperature = () => {
     return Math.floor(Math.random() * maxTemperature);
 };
 
-const toFahrenheit = (degreeCelsius) => (degreeCelsius * 9.5) + 32;
+const toFahrenheit = (degreeCelsius) => (degreeCelsius * 9/5) + 32;
 
 const temperatureInFahrenheit = (temperature) => 
     console.log(`It is currently ${toFahrenheit(temperature)}ºF at Mars`);
